@@ -2,7 +2,7 @@ class Solution {
   twoSum(nums, target) {
     const prevMap = new Map();
     for(let i=0; i<nums.length; i++) {
-      const diff = taget - nums[i];
+      const diff = target - nums[i];
       if(prevMap.has(diff)) {
         return [prevMap.get(diff), i];
       }
